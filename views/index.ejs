@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<head>
+    <title>ToDoListApp</title>
+    <link rel="stylesheet" href="main.css">
+
+</head>
+
+<body>
+    <div class="box" id="heading">
+        <h1> <%= title %> </h1>
+      </div>
+
+    <div class="box">
+       <% if(locals.data){ %>
+        <% for (let i=0; i<data.length; i++) { %>
+
+            <form action ="/delete" method="post">
+          <div class="item">
+
+            <input type="checkbox" name="check" value = "<%= data[i]._id %>" onChange = "this.form.submit()">
+            <input type="hidden" name ="title" value="<%=title%>">
+            <p><%=  data[i].name  %></p>
+        </div>
+    </form>
+          <% }}%>
+ 
+
+    <form class="item" action="submit" method="post">
+        <div class="container">
+        <input type = "text" name="taskData" autofocus>
+        <input type="hidden" name ="title" value="<%=title%>">
+        <button type ="submit"> Add task</button>
+    </div>
+    </form>
+
+
+
+
+</body>

@@ -1,0 +1,43 @@
+html {
+    background-color: #E4E9FD;
+    background-image: -webkit-linear-gradient(65deg, #A683E3 50%, #E4E9FD 50%); /*webkit = css vendor = ensure compatability for browsers that have not yet standardised it. */
+    min-height: 1000px;
+    font-family: 'helvetica neue';
+  }
+
+  
+#heading {
+    background-color: #A683E3;
+    text-align: center;
+  }
+.box {
+    max-width: 400px;
+    margin: 50px auto;
+
+    margin-top:70px ;
+
+    background: white;
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+  }
+
+  .item {
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #a15f96;
+  }
+  
+  .item:last-child {
+    border-bottom: 0;
+  }
+
+  form {
+    text-align:center;
+    margin-left: 75px;
+  }
+
+ input[type=checkbox] {
+    margin-left: 30px;
+    margin-right: 10px;
+ }
