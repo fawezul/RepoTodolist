@@ -60,8 +60,6 @@ app.get("/", (req,res) =>{
 
 });
 
-//ning - add to data list - export list to ejs - ejs render
-//if get customList name in submit - redirect to custom list
 
 //SUBMIT ITEMS
 app.post("/submit", (req,res)=>{
